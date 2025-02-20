@@ -15,12 +15,12 @@ class brick:
 
         def collide(self, ball_x, ball_y):
             if not self.isDead:
-                if(ball_x + ball_size > self.xpos and
+                if(ball_x + 20 > self.xpos and
                    ball_x < self.xpos + 100 and
-                   ball_y + ball_size > self.ypos and
+                   ball_y + 20 > self.ypos and
                    ball_y < self.ypos + 50):
                    self.isDead = True
-                   return true
+                   return True
             return False
     
 # Open a new window, caption it "Pong"
@@ -91,23 +91,23 @@ while not doExit: #GAME LOOP-----------------------------------
 
     #call the collision function 9 times
         
-        if b1.collide(bVx, bVy):
+    if b1.collide(bx, by):
             bvy *= -1
-        if b2.collide(bVx, bVy):
+    if b2.collide(bx, by):
             bvy *= -1
-        if b3.collide(bVx, bVy):
+    if b3.collide(bVx, bVy):
             bvy *= -1
-        if b4.collide(bVx, bVy):
+    if b4.collide(bVx, bVy):
             bvy *= -1
-        if b5.collide(bVx, bVy):
+    if b5.collide(bVx, bVy):
             bvy *= -1
-        if b6.collide(bVx, bVy):
+    if b6.collide(bVx, bVy):
             bvy *= -1
-        if b7.collide(bVx, bVy):
+    if b7.collide(bVx, bVy):
             bvy *= -1
-        if b8.collide(bVx, bVy):
+    if b8.collide(bVx, bVy):
             bvy *= -1
-        if b9.collide(bVx, bVy):
+    if b9.collide(bVx, bVy):
             bvy *= -1
     #render section----------------------------
     
@@ -139,8 +139,3 @@ pygame.quit()#when game is done
         
         
     
-
-
-
-
-        
