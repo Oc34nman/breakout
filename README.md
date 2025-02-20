@@ -1,4 +1,3 @@
-# breakout
 import pygame
 import random
 pygame.init()
@@ -92,7 +91,23 @@ while not doExit: #GAME LOOP-----------------------------------
 
     #call the collision function 9 times
         
-        if b1.collide(bx, by):
+        if b1.collide(bVx, bVy):
+            bvy *= -1
+        if b2.collide(bVx, bVy):
+            bvy *= -1
+        if b3.collide(bVx, bVy):
+            bvy *= -1
+        if b4.collide(bVx, bVy):
+            bvy *= -1
+        if b5.collide(bVx, bVy):
+            bvy *= -1
+        if b6.collide(bVx, bVy):
+            bvy *= -1
+        if b7.collide(bVx, bVy):
+            bvy *= -1
+        if b8.collide(bVx, bVy):
+            bvy *= -1
+        if b9.collide(bVx, bVy):
             bvy *= -1
     #render section----------------------------
     
@@ -121,4 +136,11 @@ while not doExit: #GAME LOOP-----------------------------------
 
 
 pygame.quit()#when game is done 
+        
+        
+    
+
+
+
+
         
