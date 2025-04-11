@@ -47,7 +47,7 @@ for i in range (5):
     for j in range (14):
         Brick_list.append(Brick(j*50,i*25))
 
-while not doExit: #event queue stuff
+while not doExit: #event queue 
     clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
